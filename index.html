@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Floritech Organo Industries</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#121f00",
+                      "on-background": "#191c1d",
+                      "primary-fixed-dim": "#a5d0b9",
+                      "on-secondary-fixed-variant": "#324f00",
+                      "on-secondary-container": "#486d00",
+                      "surface-container": "#edeeef",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#002114",
+                      "surface-container-low": "#f3f4f5",
+                      "on-surface": "#191c1d",
+                      "primary": "#012d1d",
+                      "outline-variant": "#c1c8c2",
+                      "on-tertiary-fixed-variant": "#5f402a",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-variant": "#e1e3e4",
+                      "on-primary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#e7e8e9",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#274e3d",
+                      "secondary-fixed-dim": "#9cd83e",
+                      "error": "#ba1a1a",
+                      "outline": "#717973",
+                      "surface-bright": "#f8f9fa",
+                      "surface-dim": "#d9dadb",
+                      "surface-tint": "#3f6653",
+                      "tertiary-fixed-dim": "#eabda0",
+                      "surface": "#f8f9fa",
+                      "primary-fixed": "#c1ecd4",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#a5d0b9",
+                      "on-primary-container": "#86af99",
+                      "on-tertiary-container": "#c79d82",
+                      "secondary": "#446900",
+                      "inverse-on-surface": "#f0f1f2",
+                      "tertiary": "#39200c",
+                      "background": "#f8f9fa",
+                      "tertiary-container": "#523520",
+                      "secondary-container": "#b4f256",
+                      "tertiary-fixed": "#ffdcc6",
+                      "on-tertiary-fixed": "#2d1604",
+                      "error-container": "#ffdad6",
+                      "primary-container": "#1b4332",
+                      "on-surface-variant": "#414844",
+                      "secondary-fixed": "#b7f558",
+                      "inverse-surface": "#2e3132"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "IBM Plex Sans"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface/90 backdrop-blur-md border-b border-outline-variant shadow-none transition-all duration-300" id="navbar">
+<div class="flex items-center gap-4">
+<img alt="Floritech Organo Logo" class="h-10 w-10 object-contain rounded-full border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC20jt5CT4EpjNXSb37H3E6J6BO5Zp-i4bt8uXd_Wq7ne09iCga5l2HX_4M5qe-6IIOJyy2FVRO3hhFzO43-caCBpCpQJVLYbTgVJ6N-6PHQnUs13QQh8nuYkO1VsMwXdvO6Hy58c7fXIDprIg5r9biuFBedofMus4fblc5xQZeVicdmo4p-_C79NaIpaCI3eA1CPK112Kchz95IrkIpphhWTHLqPqgQej3ToipnMNwohGmJsVQA-feSHtgF7GmxAXjlMXy6S86NSpz"/>
+<span class="text-headline-md font-headline-md font-bold text-primary tracking-tight">Floritech Organo</span>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-secondary transition-colors duration-200" href="#products">Products</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-secondary transition-colors duration-200" href="#about">About Us</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-secondary transition-colors duration-200" href="#team">Team</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-secondary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<div class="hidden md:flex items-center">
+<a class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-2 rounded-full hover:bg-primary-container transition-colors duration-200 scale-95 active:scale-90 shadow-[0_2px_10px_rgba(1,45,29,0.15)] flex items-center gap-2" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<span>Inquiry</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-16 px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-container-lowest">
+<!-- Abstract Organic Background Elements -->
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-br from-primary-fixed/30 to-transparent blur-3xl"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-secondary-container/20 to-transparent blur-3xl"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed/30 border border-primary-fixed-dim text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">eco</span>
+<span>Pioneers in Human Hair Base Fertilizer</span>
+</div>
+<h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-xl text-primary leading-tight">
+                    Engineering Nature for <br class="hidden md:block"/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Sustainable Growth</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl">
+                    Floritech Organo Industries leads the agricultural revolution by transforming organic waste into high-yield, bio-available liquid fertilizers. Founded in Nagpur, we bring scientific rigor to ecological stewardship.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:bg-primary-container transition-all hover:shadow-[0_4px_20px_rgba(1,45,29,0.2)] flex items-center gap-2 group" href="#products">
+                        Explore Catalog
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="px-8 py-3 rounded-full font-label-sm text-label-sm text-primary border border-outline hover:bg-surface-container transition-colors" href="#about">
+                        Our Process
+                    </a>
+</div>
+</div>
+<div class="relative lg:h-[600px] rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(1,45,29,0.1)] border border-outline-variant bg-surface-container hidden lg:block group">
+<!-- Main Hero Image Area - using a composition of assets to simulate a modern hero graphic since we don't have a single perfect large hero image -->
+<div class="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 p-2">
+<a class="col-span-2 row-span-1 rounded-lg overflow-hidden relative block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Agricultural fields and product showcase" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB27ss6DQFmyi-4FZHq5jpX6gMiZiBSyHRjcKLUBDquEhuIYiTo-GNHzaABGvFmVEcPrzBVjsTcW2J6s3xYAUUPY7TepL97wKrU6DLmjpeBiXK19jxEIHVkzX_NqhwVpvPHUsKEFJqQgf7bvnhClUw_e2ZLLTwV9RGFAJfIOyz7vvtO27aCK9EjQrN5CLUewrJKBY86GMv3WNvA84vdiAZOd8W8iXmzsK0qIndtAmrhgiiuECOGhFRMkN9X03ewsugxmN631PoUk5Ph"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+</a>
+<a class="col-span-1 row-span-1 rounded-lg overflow-hidden relative block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Plant growth promoter application" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 delay-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi-_YMASu1dCBgkT9_E16GgzPpRi9-P2A_FoCKetg4YeBn39KaiT69Op1xEu0HmedvGSK1cLszVMvS4brFu9bCp8a004LTtT7IXz4e5j6uj49gdhYej2HQwHnNTKn68HqZhCVR0q7_Pf9tnBN_Wzwm5eSHKBpWmd3-mxr9sbDoz59VgHCXcYAb0QdnocdeXyelWtMv0V1PkqE6xYIMFV8fyekO1iwAsnRo2QrnRVVLnGXgOEPPtp4N2yp6Kze2vv9w-yDnsUAya-PG"/>
+</a>
+<div class="col-span-1 row-span-1 rounded-lg overflow-hidden relative bg-surface flex items-center justify-center p-8">
+<img alt="Floritech Organo Logo centered" class="w-full h-full object-contain opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC20jt5CT4EpjNXSb37H3E6J6BO5Zp-i4bt8uXd_Wq7ne09iCga5l2HX_4M5qe-6IIOJyy2FVRO3hhFzO43-caCBpCpQJVLYbTgVJ6N-6PHQnUs13QQh8nuYkO1VsMwXdvO6Hy58c7fXIDprIg5r9biuFBedofMus4fblc5xQZeVicdmo4p-_C79NaIpaCI3eA1CPK112Kchz95IrkIpphhWTHLqPqgQej3ToipnMNwohGmJsVQA-feSHtgF7GmxAXjlMXy6S86NSpz"/>
+</div>
+</div>
+<!-- Floating Glass Card -->
+<div class="absolute bottom-8 left-8 right-8 bg-surface/80 backdrop-blur-md border border-outline-variant rounded-lg p-6 shadow-lg flex items-center justify-between">
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Established</p>
+<p class="text-headline-md font-headline-md text-primary mt-1">2015</p>
+</div>
+<div class="h-12 w-px bg-outline-variant"></div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Location</p>
+<p class="text-headline-md font-headline-md text-primary mt-1">Nagpur, India</p>
+</div>
+<div class="h-12 w-px bg-outline-variant"></div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Core Tech</p>
+<p class="text-body-md font-body-md text-primary font-bold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">science</span>
+                            Amino Acids
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden border border-outline-variant relative bg-surface-container">
+<!-- Abstract composition representing process -->
+<div class="absolute inset-0 flex flex-col">
+<a class="flex-1 bg-surface-container-high relative overflow-hidden block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Manufacturing facility interior" class="w-full h-full object-cover opacity-60 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsU6pbnwSc0Y__G26gB1u1pPO-DVWJqTdmX8bv1N06Zc7W8OB3ay8-IU6W8E5EXPbu6JKo3892QFT0HH_8sqvusGt0jXdTp2vu1fXof4Agew_-WEdqQ_wSd8EReZDMq3z9sHFtdk6fx5UwYky1N-EWNQoDBx8l-v_Bry-oDXmThB_NFoOO2x21YoIn4q06BMrw7yo76ny2vsLcvRSVKFE37XAhmkLZrskIIvTkLOxbvmwzvdhbpW6om945E_D0TtqpClilMSkaZuuH"/>
+</a>
+<div class="flex-1 bg-primary relative overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-[120px] text-primary-fixed-dim/20 absolute">recycling</span>
+<div class="text-center relative z-10 px-8">
+<p class="text-headline-md font-headline-md text-on-primary">Waste to Wealth</p>
+<p class="text-body-md font-body-md text-on-primary/80 mt-2">Transforming collected human hair into high-grade agricultural input.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-container rounded-full blur-2xl opacity-50 z-[-1]"></div>
+</div>
+<div class="lg:col-span-7 lg:pl-12 space-y-6">
+<h2 class="text-headline-lg font-headline-lg text-primary">The Floritech Innovation</h2>
+<div class="h-1 w-16 bg-secondary rounded-full"></div>
+<div class="prose prose-p:text-body-md prose-p:font-body-md prose-p:text-on-surface-variant max-w-none space-y-4">
+<p>
+                            Floritech Organo Industries, established in 2015 at Nagpur, is a pioneer in the agricultural sector. We have dedicated ourselves to the development of unique, highly effective organic farming solutions that bridge the gap between traditional practices and modern scientific requirements.
+                        </p>
+<p>
+                            Our flagship innovation involves the collection of waste human hair—a rich source of keratin and amino acids. Through our proprietary engineered process, we convert this organic waste into a highly beneficial liquid fertilizer. This process not only solves a significant waste management issue but also provides farmers with a potent, bio-available nutritional input that dramatically improves soil health and crop yield.
+                        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+<div class="p-4 border border-outline-variant rounded-lg bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[32px] mb-2">nature</span>
+<h3 class="font-label-sm text-label-sm text-on-surface font-bold uppercase">100% Organic Base</h3>
+</div>
+<div class="p-4 border border-outline-variant rounded-lg bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[32px] mb-2">water_drop</span>
+<h3 class="font-label-sm text-label-sm text-on-surface font-bold uppercase">Bio-available Liquid</h3>
+</div>
+<div class="p-4 border border-outline-variant rounded-lg bg-surface-container-lowest hidden md:block">
+<span class="material-symbols-outlined text-secondary text-[32px] mb-2">globe_asia</span>
+<h3 class="font-label-sm text-label-sm text-on-surface font-bold uppercase">Eco-stewardship</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Catalog - Bento Grid Style -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-y border-outline-variant" id="products">
+<div class="max-w-container-max mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">Engineered Formulations</span>
+<h2 class="text-headline-xl font-headline-xl text-primary">Product Portfolio</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">High-fidelity agricultural inputs designed for modern, high-yield farming.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Category 1: Human Hair Base -->
+<div class="col-span-1 md:col-span-2 lg:col-span-2 row-span-2 rounded-xl overflow-hidden border border-outline-variant relative group bg-surface">
+<a class="absolute inset-0 bg-surface-container-high z-0 block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Detailed agricultural technical view" class="w-full h-full object-cover opacity-40 mix-blend-overlay grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB27ss6DQFmyi-4FZHq5jpX6gMiZiBSyHRjcKLUBDquEhuIYiTo-GNHzaABGvFmVEcPrzBVjsTcW2J6s3xYAUUPY7TepL97wKrU6DLmjpeBiXK19jxEIHVkzX_NqhwVpvPHUsKEFJqQgf7bvnhClUw_e2ZLLTwV9RGFAJfIOyz7vvtO27aCK9EjQrN5CLUewrJKBY86GMv3WNvA84vdiAZOd8W8iXmzsK0qIndtAmrhgiiuECOGhFRMkN9X03ewsugxmN631PoUk5Ph"/>
+</a>
+<div class="relative z-10 p-8 h-full flex flex-col justify-between bg-gradient-to-r from-surface via-surface/90 to-transparent">
+<div>
+<div class="inline-flex items-center gap-1 bg-surface-container/80 backdrop-blur-sm border border-outline-variant px-3 py-1 rounded-full mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm text-on-surface font-bold">Flagship Product</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-primary mb-2">Human Hair Base<br/>Amino Acid</h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">Our pioneering liquid fertilizer extracted from keratin-rich human hair, providing instantly bio-available amino acids for robust plant development.</p>
+</div>
+<div class="flex items-end justify-between mt-8">
+<a class="w-48 h-48 rounded-lg overflow-hidden border-2 border-surface-container shadow-lg bg-white p-2 block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer" aria-label="View product on IndiaMART">
+<img alt="Human Hair Base Amino Acid Product Bottle" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDHvgbRdkf6phEGUyIxkriFlc77umbpC2gBYTBk8cmRrXNuVGpJqw__AriDzGzH4ZNAqH0BmXS0OOTZc1GCDQBhHWdsJk6krEPu_01t5aO-JxC1R3EMPU1EFCfe-YfXMRPcix5cjjmjw49x71VN7Uu6jSPOh2nLanUDC_24H5Pxn7xC0l3v8kj7foyt7WAAQLgtWCy48ibSmA_mXUDyLWPEaE0fLAIz03MpoflrjR1CxdxQoRoAm4t0n4o5vJYqq1VNZ0krLMvXp3v"/>
+</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container transition-colors">Technical Spec</button>
+</div>
+</div>
+</div>
+<!-- Category 2: Plant Growth Promoter -->
+<div class="col-span-1 row-span-1 rounded-xl overflow-hidden border border-outline-variant bg-surface relative flex flex-col group">
+<a class="h-32 w-full bg-surface-container-highest relative overflow-hidden block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Plant Growth Fields" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi-_YMASu1dCBgkT9_E16GgzPpRi9-P2A_FoCKetg4YeBn39KaiT69Op1xEu0HmedvGSK1cLszVMvS4brFu9bCp8a004LTtT7IXz4e5j6uj49gdhYej2HQwHnNTKn68HqZhCVR0q7_Pf9tnBN_Wzwm5eSHKBpWmd3-mxr9sbDoz59VgHCXcYAb0QdnocdeXyelWtMv0V1PkqE6xYIMFV8fyekO1iwAsnRo2QrnRVVLnGXgOEPPtp4N2yp6Kze2vv9w-yDnsUAya-PG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</a>
+<div class="p-6 flex-1 flex flex-col relative z-10 -mt-16">
+<a class="w-24 h-24 rounded-lg overflow-hidden border-2 border-surface-container shadow-md bg-white p-1 mx-auto mb-4 block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Flori Booster Product" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9yFpznPyHSNe3Ce6TnKL6is6jOaji0EurbbT9r1sRToqpXHgmTKJ03rtJYq-g0STmJR8jAC3n8Nur-yijWAYuf3d5NflUxnF3b24hHmlzJDyU63w8Q5Few87SwRXTqq_OCJXdFXlC1aFv_dOi9qIwo4F3nSZExMQ2L1slsPuOSkXex-KsvhEhIMg2wZYOmcmp6fIBcjaO-MSlEBzQXuKIGTEFsWn6u1PTGePGDS4ip9umwtc5D2qQf5CtnSqV2bfSD96uUwMiW-H9"/>
+</a>
+<div class="text-center mt-auto">
+<h3 class="text-headline-md font-headline-md text-primary">Plant Growth Promoters</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-2">Accelerating natural vegetative processes.</p>
+</div>
+</div>
+</div>
+<!-- Category 3: Humic Acid -->
+<div class="col-span-1 row-span-1 rounded-xl overflow-hidden border border-outline-variant bg-surface relative flex flex-col group">
+<a class="h-32 w-full bg-surface-container-highest relative overflow-hidden block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Soil and root health" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7YQy0CwB_vLeYxfBjgMqlgL3kSukABQIffTPfaKAB0RZSrnOufv_BvNMs5ECTXhDGR_j0U11ZWH_094XzJeY-U0H0aY9yo_TyGhTojbDlFd2sTEeT6T0ImQ7JW6OJnNesr_vQv5wGDrD_wGvvsRZySyKuWFI11col0I3dyoKI6Oq9exnAsLkhQuzIBINkzyJ6ZOFouJ5JTVPcd5nnrodXBMCYCmdP6Mk4RBdaDm4MtbbabjNnNbjB0_PN0iBepEsh-vlVgOQTPzxt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</a>
+<div class="p-6 flex-1 flex flex-col relative z-10 -mt-16">
+<a class="w-32 h-20 rounded-lg overflow-hidden border-2 border-surface-container shadow-md bg-white p-1 mx-auto mb-4 flex items-center justify-center block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Humic Acid Packaging" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB9cMvOrqWqhQAXxbq_PkT4ADoyxYvmgd9mYOrVlqSLgdZl1g5k5XJAxA5MGDtXGeo88s0_matcSsD3glI-KreSct3x-AjXvG2ObDB7-JOIdz_oYBoUM1ZhuVXoqx7c26ylIScFYkkHu8kjOMp2o7zZgcYklfqv1iExiHL6_cD766nIlkrAVBjLDoiKJuxTdWvHaCImdVS4JYnUB1nyqc-bLwXCASgu-UMEHHaFwO0OR0vUQnpl-MaX629naa4XBQIJKh1TpFV49lu"/>
+</a>
+<div class="text-center mt-auto">
+<h3 class="text-headline-md font-headline-md text-primary">Humic Acid Solutions</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-2">Enhancing soil structure and nutrient uptake.</p>
+</div>
+</div>
+</div>
+<!-- Category 4: Pesticides & Adjuvants -->
+<div class="col-span-1 md:col-span-2 row-span-1 rounded-xl overflow-hidden border border-outline-variant bg-surface flex">
+<a class="w-1/3 bg-surface-container relative overflow-hidden hidden sm:block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Agricultural spraying equipment" class="w-full h-full object-cover opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4oPMpyNLb1nstFDMmfGnV8zo2Vi_nJiiApSaqHBbtda_l_iV0vobhGfePpdzjUIGmb0Y83dBmzGgQFVG4Ypy8WpdYSp5Ei4Cg6fOuYhThFwbsRj2iSqCsapoMmfn-5FP2nrdTzDxNalC2cqu7iis8t4J-Jg-A2_XYVzStOIRYsj4wOxmJD4S6ncCMLxuxb4SjlkVLlBPkAGb5ZcBgqQyNvriBHPPzHYK3P4DQ8sJPG2rHe2XIOE-YYBkwU21n5b9wEOq9F9LfraM_"/>
+</a>
+<div class="p-6 flex-1 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary">pest_control</span>
+<h3 class="text-headline-md font-headline-md text-primary">Pesticides &amp; Adjuvants</h3>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Comprehensive crop protection and sticker solutions including non-ionic silicon bases.</p>
+<div class="flex gap-2">
+<a class="w-16 h-16 rounded border border-outline-variant bg-white p-1 block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer"><img alt="Silicon Sticker 100ml" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWuyhQ_oFKV5kZ6d2lHBJ-lOA-u5nU-JpbEedzlhZNsbPc28UagckP83NnHFRFjrcxDnBf-UggBgxYxs8DluR98S4G1gqd22VL5mWDqldI5WSFh_WkJ4vSXScBL1RQD1m-W7pMX6F3eLLpUkEKZKesoxt_3RMT4wnJVE7LeNGu7jQtCuHnVooUBLFRbECu7QGtRPFnn6GLeXEtYA21m8YjQkL53sl2ej3laznoMTr13Q3M9Vr5Eam0pQmaiFF51jXUZCMxOUPJ_qWS"/></a>
+<a class="w-16 h-16 rounded border border-outline-variant bg-white p-1 block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer"><img alt="Adjuvant product" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB46LulmoN8lBnVLO812aG1Fu6MEZKOqoTyExjIdyJH2x83AuuHWAN2Dpu_Y9zasNkWjRtYgUdfZXPmQNDqD0Zg5mTSoggQp_OMhCV3kGDUni2bammlg7zliBsLz3C0V2q0T0QwsZvDUDVism1j7LCaWtz1QF5l4UEK79QxelrQ9uOZg5SqPLvD94OdP19PB0x6xoIS3K2hb_M9x0WijjZ7xISjKl1j0KjLlrkW1CKuwn7QdJvEIEy_tDVYgO2xovYZLiYVJWOxpzYZ"/></a>
+<a class="w-16 h-16 rounded border border-outline-variant bg-white p-1 block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer"><img alt="Pesticide label" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg8VUbK1Gmi-b31wyXbaSaZEInnleEw2E6gFbJSDNR841R90WbQFpxB4tH7qzhYIyJ78RGj_cpKZ_8ClNfxpNMEvteyXvWstSwvsWGlMivFXP1ZkTC2DjfbZqk_vA37Fz57AaQnt3wz24T1cFJu5QGYFvoYG43Y4jl7P7qWqVrSHsPPG1URqHwTV2d9_CnCaR_YSxZXvRWGeGybW_JfsXa4IfTaDD3zhKTRNh9_Yc0SE9JDm63ys7vmM1OXcwqTcne6_lsiiklRGSb"/></a>
+</div>
+</div>
+</div>
+<!-- Category 5: Zyme Granules -->
+<div class="col-span-1 row-span-1 rounded-xl overflow-hidden border border-outline-variant bg-surface-tint p-6 text-on-primary relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-secondary/30 rounded-full blur-2xl"></div>
+<div>
+<h3 class="text-headline-md font-headline-md text-on-primary">Zyme Granules</h3>
+<p class="text-body-md font-body-md text-on-primary/80 mt-2">Slow-release granular formulations for sustained nutrition.</p>
+</div>
+<a class="mt-4 rounded-lg overflow-hidden border border-white/20 aspect-video relative block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Zyme Granules spread" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQiW9R41ozabiY6LVAJy9ZZOP2UlSItqnOQBdYstApBPJWJ1zjj96V-T_kUDQA4RQ_GOGECV4yNmx9IrVIK5uMPrgvbuklnzPSZ75-KZN1ksCwYGmbjgY1BFxQfhVotxJh5jAHjZ2jUe1IsEiIFEp_sbK8kXMqR18M0J6cjlFP-U-jh27SYcaowrb3EGb1Wch6Hh8-8lul8zoS3J3psR-U12U5RDnG1GHayRBzOShNM8xX3xsSRNBYZp1YQGAXJrWiJXy0ztWl2krk"/>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements & Packaging Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Achievements -->
+<div>
+<div class="mb-8">
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">Credibility</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mt-2">Achievements &amp; ISO Certification</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 sm:col-span-1 aspect-[3/4] rounded-xl overflow-hidden border border-outline-variant bg-surface-container relative group block">
+<img alt="ISO Certification Document" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcPllq2vNbVfksJX6VczaCZAckzeC6TZ_2izDrgJPjp_jIby7PbJZIJ-srIcxDRheZehYdm048hLT1k2d-Nve-9-ZXjeYEgi1kAThY9aSjKCcpWWo5utRge8J5pHRi432R50xMUP3zN6NbZN_9t9IWvJEFN09lKcNBzYUy2yyS6k5CgsfJ-vArpIBUYfolhu1EZiF2aDOuoOBH0e6R8bToqro6cbEAEQc7etxfZX_dQ5nXkkw-cbTs_Fsp2sA_tyElB2ZJfiU4OaUB"/>
+<div class="absolute bottom-0 inset-x-0 bg-surface/90 backdrop-blur p-3 border-t border-outline-variant text-center">
+<span class="font-label-sm text-label-sm text-primary font-bold">ISO Certified</span>
+</div>
+</div>
+<div class="col-span-2 sm:col-span-1 flex flex-col gap-4">
+<div class="flex-1 rounded-xl overflow-hidden border border-outline-variant bg-surface-container group block">
+<img alt="Company Achievement Event" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwDNIcFy74NFWplVLXlG4-wWhSLN-3Otl0c3bkad7Yd8flIuxZJnrZS07iaxdkBYFs8Nly3QtGBccAfi89QaIbdCf8Gij85oW3NjoGxgnw3croHNruORPekdrmBnTns-XkGV8K9FxutxVkEnKKdw-KB2lfADWqVQdxceYhWkpIJURiAJasTc5G_yp3pwVyoOTH1KykWBGi4TVc2V51uGsdVltTjG2Ly0iTTT1AcE2dT-cdE5coqTUlcInoBLlz84Q0OxgXoUZsoRvQ"/>
+</div>
+<div class="h-32 rounded-xl overflow-hidden border border-outline-variant bg-surface-container group block">
+<img alt="Industry Award Reception" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeOtmFbWfktPNPvtnGJCoRO539QNMKIsFTdBjS5AdoWY-LR7fnmwnD2QfHa0P2aUawn_Zd7Zv3nXjFpnqN8aDvZalrRFjjT8_hYPBtXi5iEirPMSVRZyNSTrxFRrfvBqCqgvElcgj7gnN34u33SD55i1JDdFeyPNsNRVrddlM6imUqcc8vd1b8mFWvgBXk9a5O_wlfjBMcDbEwMr7FBQG6Hk9DWsg-8GsFQxwVox6yY1RvcITTv2u_Ppuu2mzAP-UWoFBMoi1OkThh"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Packaging Unit -->
+<div class="flex flex-col">
+<div class="mb-8">
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">Infrastructure</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mt-2">State-of-the-Art Packaging Unit</h2>
+</div>
+<a class="flex-1 rounded-xl overflow-hidden border border-outline-variant relative group block" href="https://www.indiamart.com/floritech-organo-industries/profile.html?srsltid=AfmBOoqL-Bd7Ct2t9PePRdqywtEhciIL38t_qq0z9HSMnsVfpYdozKwU" target="_blank" rel="noopener noreferrer">
+<img alt="Floritech Organo Packaging Facility" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsU6pbnwSc0Y__G26gB1u1pPO-DVWJqTdmX8bv1N06Zc7W8OB3ay8-IU6W8E5EXPbu6JKo3892QFT0HH_8sqvusGt0jXdTp2vu1fXof4Agew_-WEdqQ_wSd8EReZDMq3z9sHFtdk6fx5UwYky1N-EWNQoDBx8l-v_Bry-oDXmThB_NFoOO2x21YoIn4q06BMrw7yo76ny2vsLcvRSVKFE37XAhmkLZrskIIvTkLOxbvmwzvdhbpW6om945E_D0TtqpClilMSkaZuuH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<p class="text-on-primary font-body-md text-body-md max-w-md">Our modern packaging facility ensures product integrity from our vats to the farmer's field, maintaining strict quality control and batch consistency.</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant" id="team">
+<div class="max-w-container-max mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="text-headline-xl font-headline-xl text-primary">Leadership</h2>
+<div class="h-1 w-16 bg-secondary rounded-full mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<!-- Profile 1 -->
+<div class="flex items-center gap-6 p-6 rounded-xl border border-outline-variant bg-surface hover:shadow-lg transition-shadow">
+<div class="w-24 h-24 rounded-full bg-surface-container-high border-2 border-surface flex items-center justify-center overflow-hidden shrink-0">
+<span class="material-symbols-outlined text-[48px] text-outline">person</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary">Mr. Sonul Bodhane</h3>
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mt-1">CEO &amp; Founder</p>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">Driving the vision of sustainable agriculture through innovative organic waste utilization.</p>
+</div>
+</div>
+<!-- Profile 2 -->
+<div class="flex items-center gap-6 p-6 rounded-xl border border-outline-variant bg-surface hover:shadow-lg transition-shadow">
+<div class="w-24 h-24 rounded-full bg-surface-container-high border-2 border-surface flex items-center justify-center overflow-hidden shrink-0">
+<span class="material-symbols-outlined text-[48px] text-outline">person</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary">Pankaj Ambule</h3>
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mt-1">Key Leadership</p>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">Overseeing operations and ensuring the highest standards in manufacturing and distribution.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / Contact Section -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container relative pt-16" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Brand & Address -->
+<div class="lg:col-span-4 space-y-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-white rounded-full p-1 flex items-center justify-center">
+<img alt="Floritech Logo small" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC20jt5CT4EpjNXSb37H3E6J6BO5Zp-i4bt8uXd_Wq7ne09iCga5l2HX_4M5qe-6IIOJyy2FVRO3hhFzO43-caCBpCpQJVLYbTgVJ6N-6PHQnUs13QQh8nuYkO1VsMwXdvO6Hy58c7fXIDprIg5r9biuFBedofMus4fblc5xQZeVicdmo4p-_C79NaIpaCI3eA1CPK112Kchz95IrkIpphhWTHLqPqgQej3ToipnMNwohGmJsVQA-feSHtgF7GmxAXjlMXy6S86NSpz"/>
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-on-primary">Floritech Organo</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed mt-1">location_on</span>
+<p class="text-body-md font-body-md text-on-primary/90">
+                                Sy.No. 86, At: Sukali(Rithi),<br/>
+                                Ta- Umred, Nagpur, Maharashtra
+                            </p>
+</div>
+<a class="w-full h-48 rounded-lg overflow-hidden border border-white/20 mt-4 bg-surface-container-low block" href="https://maps.app.goo.gl/74RuiEkPuTTZjtf17?g_st=aw" target="_blank" rel="noopener noreferrer" aria-label="Open location in Google Maps" data-location="Sukali, Umred, Nagpur">
+<!-- Map Placeholder via CSS background or JS integration normally, using generic placeholder styling per instructions -->
+<div class="w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMGU1ZTIiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZmlsbD0iIzQxNDg0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwMDB4NzQ1PC90ZXh0Pjwvc3ZnPg==')] bg-cover bg-center flex items-center justify-center relative">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="bg-surface px-4 py-2 rounded shadow-md z-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-error">pin_drop</span>
+<span class="text-on-surface font-label-sm text-label-sm font-bold">View on Google Maps</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Contact Info -->
+<div class="lg:col-span-4 space-y-6">
+<h3 class="text-body-lg font-body-lg font-bold border-b border-white/20 pb-2 inline-block">Contact Directory</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 group cursor-pointer">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<span class="text-body-md font-body-md text-on-primary/90 group-hover:text-secondary-fixed transition-colors">09860330144</span>
+</li>
+<li class="flex items-center gap-3 group cursor-pointer">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<span class="text-body-md font-body-md text-on-primary/90 group-hover:text-secondary-fixed transition-colors">9763626991</span>
+</li>
+<li class="flex items-center gap-3 group cursor-pointer">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<span class="text-body-md font-body-md text-on-primary/90 group-hover:text-secondary-fixed transition-colors">9561369531</span>
+</li>
+<li class="flex items-center gap-3 group cursor-pointer pt-2">
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+<span class="text-body-md font-body-md text-on-primary/90 group-hover:text-secondary-fixed transition-colors">floritechorgano@gmail.com</span>
+</li>
+<li class="flex items-center gap-3 group cursor-pointer">
+<span class="material-symbols-outlined text-secondary-fixed">chat</span>
+<span class="text-body-md font-body-md text-on-primary/90 group-hover:text-secondary-fixed transition-colors">WhatsApp: 820 826 6497</span>
+</li>
+</ul>
+</div>
+<!-- Business & Links -->
+<div class="lg:col-span-4 space-y-6">
+<h3 class="text-body-lg font-body-lg font-bold border-b border-white/20 pb-2 inline-block">Business &amp; Legal</h3>
+<div class="space-y-4 bg-primary-fixed-variant/30 p-4 rounded-lg border border-white/10">
+<div>
+<p class="text-label-sm font-label-sm text-secondary-fixed uppercase mb-1">Banking Partner</p>
+<p class="text-body-md font-body-md text-on-primary">Bank of Baroda</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-secondary-fixed uppercase mb-1">Taxation</p>
+<p class="text-body-md font-body-md text-on-primary">GST Registered Entity</p>
+</div>
+</div>
+<div class="flex gap-4 pt-4">
+<a class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span> <!-- Placeholder for IndiaMART -->
+</a>
+<a class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all" href="https://www.facebook.com/profile.php?id=100063736012526" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile">
+<span class="material-symbols-outlined text-[20px]">facebook</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Shared Component Injection -->
+<div class="w-full px-margin-desktop py-8 flex flex-col md:flex-row justify-between items-center gap-gutter border-t border-white/10 bg-primary dark:bg-primary-container">
+<p class="text-body-md font-body-md text-on-primary/80">© 2024 Floritech Organo Industries. Engineered Nature for Sustainable Growth.</p>
+<div class="flex flex-wrap gap-6">
+<a class="text-label-sm font-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-label-sm font-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">ISO Certifications</a>
+<a class="text-label-sm font-label-sm text-on-primary/80 hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Bulk Orders</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple vanilla JS for nav background scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-[0_4px_30px_rgba(0,0,0,0.05)]');
+                nav.classList.replace('bg-surface/90', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-[0_4px_30px_rgba(0,0,0,0.05)]');
+                nav.classList.replace('bg-surface/95', 'bg-surface/90');
+            }
+        });
+    </script>
+</body></html>
